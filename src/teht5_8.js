@@ -61,7 +61,7 @@ function Teht6() {
 
     return (
         <div>
-
+            <h1 style={{ color: 'green' }}>Taulukko</h1>
             <button onClick={() => setVisible(!visible)}>{visible ? 'Piilota' : 'Näytä'}</button>
             {visible && <div><Taulukko otsikot={otsikot} data={data} />
                 <Taulukko otsikot={otsikotENG} data={data} /></div>}
@@ -77,7 +77,7 @@ function Taulukko(props) {
 
     return (
         <div>
-            <h1 style={{ color: 'green' }}>Taulukko</h1>
+            
             <table>
                 <Otsikko otsikot={o} />
                 <TauluRivi data={d} />
